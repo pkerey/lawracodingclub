@@ -4,413 +4,437 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawra Coding Club|LCC</title>
-    <!--CDN Link-->
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="lcc.css">
+    <meta name="description" content="Lawra Coding Club - Learn to code HTML, CSS, JavaScript and web development. Join our community of aspiring developers.">
+    <meta name="keywords" content="coding, web development, html, css, javascript, lawra">
+    <meta name="author" content="Lawra Coding Club">
+    <meta property="og:title" content="Lawra Coding Club - Learn to Code">
+    <meta property="og:description" content="Join thousands of students learning web development at Lawra Coding Club.">
+    <meta property="og:image" content="images/logo.png">
+    <title>Lawra Coding Club | Learn Web Development</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<style>
-    .section1{
-        background-image: url("images/IMG_0405.jpg");
-        background-size: cover;
-        border-style: none;
-        background-attachment: fixed;
-    }
-</style>
 <body>
-    <div class="container-fluid bg-info">
-        <div class="row">
-            <div class="col-md-3-lg-sm-4">
-                <div class="nav">
-                    <ul>
-                        <li>
-                            <a href="#" class="text-danger">Home</a>
-                            <a href="#" class="text-danger">Service</a>
-                            <a href="#" class="text-danger">Blog</a>
-                            <a href="signup.html" class="text-danger">LogIn|LogOut</a>
-                        </li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <img src="images/logo.png" alt="Lawra Coding Club Logo" class="logo-img">
+                <span class="brand-text">LCC</span>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Learn Web Development</h1>
+            <p>Join Lawra Coding Club and master HTML, CSS, and JavaScript. Build amazing projects and launch your tech career.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-outline">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section style="background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);">
+        <div class="container">
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Active Students</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Lawra Coding Club</h2>
+                <p>Empowering the youth through coding education and digital literacy</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 50px;">
+                <div>
+                    <img src="SVG/undraw_programmer_re_owql.svg" alt="Coding Illustration" style="max-width: 100%;">
+                </div>
+                <div>
+                    <h3 style="font-size: 1.75rem; margin-bottom: 20px;">Our Mission</h3>
+                    <p style="color: var(--gray-600); line-height: 1.8; margin-bottom: 20px;">
+                        Learning is a collaborative effort which needs to be taken seriously in every developing community. The advancement in technology has a lot of impact on the lives of people in every society.
+                    </p>
+                    <p style="color: var(--gray-600); line-height: 1.8; margin-bottom: 30px;">
+                        We aim to equip the youth and kids interested in Information Technology with the skills needed to build their own web applications from scratch.
+                    </p>
+                    <div style="display: flex; gap: 30px;">
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 10px;">💡 Innovation</h4>
+                            <p style="color: var(--gray-600);">Creative problem-solving</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 10px;">🤝 Community</h4>
+                            <p style="color: var(--gray-600);">Support and collaboration</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 10px;">🚀 Growth</h4>
+                            <p style="color: var(--gray-600);">Career advancement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" style="background: var(--light-gray-2);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Programs</h2>
+                <p>Choose the perfect program for your learning journey</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                        <img src="SVG/undraw_programmer_re_owql.svg" alt="Web Development">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-badge">Beginner to Advanced</div>
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-text">Master HTML, CSS, and JavaScript. Build responsive websites and web applications.</p>
+                        <ul style="color: var(--gray-600); margin-bottom: 20px;">
+                            <li>✓ HTML5 Fundamentals</li>
+                            <li>✓ CSS3 & Responsive Design</li>
+                            <li>✓ JavaScript Basics to Advanced</li>
+                        </ul>
+                        <button class="btn btn-primary" style="width: 100%;">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                        <img src="SVG/undraw_engineering_team_a7n2.svg" alt="Digital Literacy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-badge">For Everyone</div>
+                        <h3 class="card-title">Digital Literacy</h3>
+                        <p class="card-text">Learn essential digital skills. Understand the internet, online security, and digital tools.</p>
+                        <ul style="color: var(--gray-600); margin-bottom: 20px;">
+                            <li>✓ Internet Basics</li>
+                            <li>✓ Online Security</li>
+                            <li>✓ Digital Tools & Apps</li>
+                        </ul>
+                        <button class="btn btn-primary" style="width: 100%;">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                        <img src="SVG/undraw_educator_re_ju47.svg" alt="Career Development">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-badge">Professional Track</div>
+                        <h3 class="card-title">Career Development</h3>
+                        <p class="card-text">Build a solid career in tech. Learn professional skills and industry best practices.</p>
+                        <ul style="color: var(--gray-600); margin-bottom: 20px;">
+                            <li>✓ Portfolio Building</li>
+                            <li>✓ Job Preparation</li>
+                            <li>✓ Industry Standards</li>
+                        </ul>
+                        <button class="btn btn-primary" style="width: 100%;">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Moments</h2>
+                <p>Glimpses from our amazing learning community</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="images/IMG_0601.jpg" alt="Community Event 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/IMG_0751.jpg" alt="Community Event 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/IMG_0778.jpg" alt="Community Event 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/IMG_0603.jpg" alt="Community Event 4">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/IMG_0598.jpg" alt="Community Event 5">
+                </div>
+
+                <button class="carousel-nav carousel-prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav carousel-next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="carousel-controls">
+                    <span class="carousel-dot active" data-slide="0"></span>
+                    <span class="carousel-dot" data-slide="1"></span>
+                    <span class="carousel-dot" data-slide="2"></span>
+                    <span class="carousel-dot" data-slide="3"></span>
+                    <span class="carousel-dot" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section style="background: var(--light-gray-2);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>Join us for coding workshops, webinars, and community events</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-badge">Workshop</div>
+                        <h3 class="card-title">🔧 HTML5 Fundamentals</h3>
+                        <p class="card-text">Learn the basics of HTML5 and create your first web page.</p>
+                        <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;">📅 May 20, 2026 | 2:00 PM</p>
+                        <button class="btn btn-secondary" style="width: 100%;">Register</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-badge">Webinar</div>
+                        <h3 class="card-title">💻 Career in Web Dev</h3>
+                        <p class="card-text">Explore career opportunities and paths in web development.</p>
+                        <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;">📅 May 22, 2026 | 3:00 PM</p>
+                        <button class="btn btn-secondary" style="width: 100%;">Register</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-badge">Meetup</div>
+                        <h3 class="card-title">🤝 Community Hangout</h3>
+                        <p class="card-text">Network with fellow developers and share your projects.</p>
+                        <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;">📅 May 25, 2026 | 5:00 PM</p>
+                        <button class="btn btn-secondary" style="width: 100%;">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <p>Tips, tutorials, and insights from our community</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                        <i class="fas fa-code" style="font-size: 3rem; color: white; display: flex; align-items: center; justify-content: center; height: 100%;"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom: 10px;">📅 May 10, 2026 • By Perey</p>
+                        <h3 class="card-title">Getting Started with HTML</h3>
+                        <p class="card-text">A beginner's guide to HTML5 and semantic markup. Learn the fundamentals of web page structure.</p>
+                        <a href="blog.html" style="color: var(--primary-color); font-weight: 600;">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                        <i class="fas fa-palette" style="font-size: 3rem; color: white; display: flex; align-items: center; justify-content: center; height: 100%;"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom: 10px;">📅 May 12, 2026 • By Sarah</p>
+                        <h3 class="card-title">CSS Tips for Beautiful Designs</h3>
+                        <p class="card-text">Master CSS3 features and create stunning, responsive web designs with modern techniques.</p>
+                        <a href="blog.html" style="color: var(--primary-color); font-weight: 600;">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                        <i class="fas fa-terminal" style="font-size: 3rem; color: white; display: flex; align-items: center; justify-content: center; height: 100%;"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom: 10px;">📅 May 15, 2026 • By John</p>
+                        <h3 class="card-title">JavaScript Basics Explained</h3>
+                        <p class="card-text">Understand variables, functions, and events in JavaScript. Build interactive web pages today.</p>
+                        <a href="blog.html" style="color: var(--primary-color); font-weight: 600;">Read More →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="blog.html" class="btn btn-primary">Read All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: var(--light-gray-2);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We'd love to hear from you!</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1000px; margin: 0 auto;">
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 30px;">Contact Information</h3>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-color);">📞 Phone</h4>
+                        <p style="color: var(--gray-600);"><a href="tel:+233541715807">+233 541 715 807</a></p>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-color);">📧 Email</h4>
+                        <p style="color: var(--gray-600);"><a href="mailto:info@lawracodingclub.com">info@lawracodingclub.com</a></p>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-color);">📍 Location</h4>
+                        <p style="color: var(--gray-600);">Lawra Municipality<br>Upper West Region, Ghana</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 15px; color: var(--primary-color);">Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://wa.me/message/DVNUYMNVDP6AK1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/perey.kuueru.3" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 30px;">Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <h2 style="color: white; margin-bottom: 15px;">Stay Updated</h2>
+                <p style="margin-bottom: 30px; opacity: 0.95;">Subscribe to our newsletter for the latest coding tips, tutorials, and community updates.</p>
+                <form id="newsletterForm" style="display: flex; gap: 10px;">
+                    <input type="email" placeholder="Your email address" required style="flex: 1; padding: 12px; border: none; border-radius: 8px; font-size: 1rem;">
+                    <button type="submit" class="btn" style="background: white; color: var(--primary-color); font-weight: 700;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About LCC</h3>
+                    <p>Lawra Coding Club is dedicated to empowering youth through coding education and digital literacy in the Lawra Municipality.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
-                <div class="logo">
-                    <img src="images/logo.png" alt="logo">
-                    <span>
-                        <p class="text-warning display-6">LAWRA CODING CLUB: <em class="text-primary display-6">The Bright <sub class="display-6">Future</sub></em></p>
-                    </span>         
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+233541715807">+233 541 715 807</a></li>
+                        <li><a href="mailto:info@lawracodingclub.com">info@lawracodingclub.com</a></li>
+                        <li>Lawra Municipality, Ghana</li>
+                    </ul>
                 </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/message/DVNUYMNVDP6AK1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/perey.kuueru.3" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lawra Coding Club. All rights reserved. | Built with ❤️ for the community</p>
             </div>
         </div>
-    </div>
-<section1>
-    <div class="container-fluid bg-success">
-        <div class="row">
-            <div class="col-md-2-lg-sm-">
-                <!-- Slideshow container -->
-<div class="slideshow-container">
+    </footer>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 10</div>
-      <img src="images/IMG_0601.jpg" style="width:100%">
-      <div class="text">Solide Fundation Starts with effort</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 10</div>
-      <img src="images/IMG_0751.jpg" style="width:100%">
-      <div class="text">Code to Entertain</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 10</div>
-      <img src="images/IMG_0778.jpg" style="width:100%">
-      <div class="text">Friends For Life</div>
-    </div>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 10</div>
-        <img src="images/IMG_0603.jpg" style="width:100%">
-        <div class="text">Be Yourself</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">5 / 10</div>
-        <img src="images/IMG_0598.jpg" style="width:100%">
-        <div class="text">Building A team of Techies</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">6 / 10</div>
-        <img src="images/IMG_0405.jpg" style="width:100%">
-        <div class="text">Building A team of Techies</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">7 / 10</div>
-        <img src="images/IMG_0597.jpg" style="width:100%">
-        <div class="text">Building A team of Techies</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">8 / 10</div>
-        <img src="images/IMG_0601.jpg" style="width:100%">
-        <div class="text">Building A team of Techies</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">9 / 10</div>
-        <img src="images/IMG_0660.jpg" style="width:100%">
-        <div class="text">Building A team of Techies</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">10 / 10</div>
-        <img src="images/IMG_0664.jpg" style="width:100%">
-        <div class="text">Building A team of Techies</div>
-    </div>
-
-
-
-
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
-            </div>
-
-        </div>
-    </div>
-</section1>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2-lg-sm-">
-                <h2 class="display-5 text-center text-danger m-2">WELCOME MESSAGE<hr class="bg-danger display-6"></h2>
-            </div>
-            <div class="open">
-                <p>
-                    <em class="text-warning display-5">Lawra Coding Club (LCC)</em><br>
-Learning is a collaborative effort which needs to be taking serious in every developing community.<br>
-The advancement in technology has a lot of impact on the lives of people in every society as we can see a lot of people or communities flourishing in the field of technology.<br> We the people 
-can also be like them or even more than them: <br>this can be achieved if we all come together and learn 
-how to developers of our own product rather than being end user at all the time.
-The initiative of Lawra coding club seek to equip the youth and the kids are interested in the field of Information Technology and are very enthusiastic to 
-learn how to code and building their own web applications from scratch.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--Mission Statement-->
-
-<section>
-    <div class="container" style="margin-top: 20px; padding-top: 10px;">
-        <div class="row justify-content-center">
-            <div class="program">
-                <h2 class="display-2 text-danger text-center">Explore &#10095<hr class="bg-info"></h2>
-                <p class="text-center text-success display-">Get to know why the initiative of Lawra Coding Club is on of the best </p>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow" style="max-width: 25rem; border-radius: 0 30px 30px 0;">
-                    <div class="inner">
-                        <img class="card-img-top" img src="SVG/undraw_programmer_re_owql.svg" class="img-round" style="width: 6vw; height: 6vh;">
-                    </div>
-                    <div class="card-body text-center">
-                        <h2 class="card-title"><b>Coding &#10084</b></h2>
-                        <p class="card-text">Training the youth in coding</p>
-                        <a href="#" class="btn btn-success">Learn More...</a>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="col-md-4">
-                <div class="card shadow" style="max-width: 25rem; border-radius: 0 30px 30px 0;">
-                    <div class="inner">
-                        <img class="card-img-top" img src="SVG/undraw_engineering_team_a7n2.svg" class="img-round" style="width: 6vw; height: 6vh;">
-                    </div>
-                    <div class="card-body text-center">
-                        <h2 class="card-title"><b>Digital Literacy</b></h2>
-                        <p class="card-text">A digital Mine, Good Choice</p>
-                        <a href="https://en.wikipedia.org/wiki/Digital_literacy" class="btn btn-success">Learn More...</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card shadow" style="max-width: 25rem; border-radius: 0 30px 30px 0;">
-                    <div class="inner">
-                        <img class="card-img-top" img src="SVG/undraw_educator_re_ju47.svg" class="img-round" style="width: 6vw; height: 6vh;">
-                    </div>
-                    <div class="card-body text-center">
-                        <h2 class="card-title"><b>Carrer DEV</b></h2>
-                        <p class="card-text">Building A solide Carrer In TECH</p>
-                        <a href="https://en.wikipedia.org/wiki/Career_development" class="btn btn-success">Learn More...</a>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </div>
-</section>
-
-<!--Events Organizing-->
-
-<section>
-    <div class="section1">
-        <div class="container-fluid justify-content-center">
-            <div class="row justify-content-center">
-                <div class="col-md-2-lg-sm-4">
-                    <div class="inlet">
-                        <h2 class="text-center mt-5 bg-light" style="border: 3px solid pink;">EVENTS IN LAWRA <hr></h2>
-                    </div>
-                    
-                    <div class="events">
-                        <p class="text-success">Events Organization within the Lawra Municipality is Awesome, as citizens welcomes
-                            every occassion with a strong participation <br>
-                            Pre observation <em class="text-success">Kobine Festival</em> which is an annual celebration is one of the most cherish occasion that brings a lot of greatness in lives of Lawra Citizens.<br>
-                            <button class="btn btn-danger"> <a href="#">Read More &#10046</a></button>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-2">
-                    <div class="card shadow" style="max-width: 20rem;">
-                        <div class="inner">
-                            <img class="card-img-top" img src="SVG/undraw_moments_0y20.svg" class="img-round" style="width: 6vw;">
-                        </div>
-                        <div class="card-title">
-                            <h2>Politics</h2>
-                        </div>
-                        <div class="card-text">
-                            <p>The Political system in Lawra</p>
-                        </div>
-                        <div class="card-button">
-                            <button class="btn btn-primary">Explore &#10095</button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-md-4 mt-2">
-                    <div class="card shadow" style="max-width: 20rem;">
-                        <div class="inner">
-                            <img class="card-img-top" img src="SVG/undraw_moments_0y20.svg" class="img-round" style="width: 6vw;">
-                        </div>
-                        <div class="card-title">
-                            <h2>WEEK END EVENTS</h2>
-                        </div>
-                        <div class="card-text">
-                            <p><ul>
-                                Funerals,
-                                Sports,
-                                Birthdays
-                            </ul></p>
-                        </div>
-                        <div class="card-button">
-                            <button class="btn btn-primary">Explore &#10095</button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-md-4 mt-2">
-                    <div class="card shadow" style="max-width: 20rem;">
-                        <div class="inner">
-                            <img class="card-img-top" img src="SVG/undraw_moments_0y20.svg" class="img-round" style="width: 6vw;">
-                        </div>
-                        <div class="card-title">
-                            <h2>ENTERTAINMENT/<br>JAMZ</h2>
-                        </div>
-                        <div class="card-text">
-                            <p>Parties, Club Night & HugeOut</p>
-                        </div>
-                        <div class="card-button">
-                            <button class="btn btn-primary">Explore &#10095</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow bg-dark mt-2" style="max-width: 22rem; border: none;">
-                    <div class="card-text">
-                        <div class="mision">
-                            <h2 class="text-light display-">Mission Statement<hr></h2>
-                            <p>
-                                It is our hope and wish that every child or the youth will be able to know the essence of writing codes (syntax) to command the 
-                                computer to perform a task because the 
-                                computer is a tool that takes instructions
-                                 from the user.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!--Vision Statement-->
-            <div class="col-md-4">
-                <div class="card shadow bg-dark mt-2" style="max-width: 22rem; border: none;">
-                    <div class="card-text">
-                        <div class="vision">
-                            <h2 class="text-light display-">Vision Statement<hr></h2>
-                            <p>
-                                Digital Literacy is what we are in for, 
-                                with this initiative we of the view that 
-                                computer literacy is an important asset in 
-                                the municipality as almost 85% of the citizens
-                                 within the municipality are using smartphones. 
-                                 Let’s support the vision and dream of digitalization 
-                                 as we train ourselves towards programming.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!--Social Media Handles-->
-
-            <div class="col-md-4">
-                <div class="card shadow bg-dark mt-2" style="max-width: 22rem; border: none;">
-                    <div class="card-text">
-                        <div class="social-media">
-                            <h2 class="text-light display-block m-3">On Social Media<hr></h2>
-                            <p>Follow Us on Social Media</p>
-                            <p class="text-primary"><b>Reach Us On:
-                                0541715807
-                            </b></p>
-                            <div class="icons">
-                                <a href="https://wa.me/message/DVNUYMNVDP6AK1"><i class="fa fa-whatsapp"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="https://www.facebook.com/perey.kuueru.3"><i class="fa fa-facebook-official"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-square"></i></a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-        <div class="row justify-content-center">
-            <div class="relocate">
-                
-            </div>
-            <div class="col-md-3-lg-sm-4">
-                <div class="search-b">
-                    <div class="input-group justify-content-center">
-                        <div class="input-group-text" id="btnGroupAddon2">@</div>
-                            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
-                        </div>
-                    </div>
-                </div>
-                <div class="card shadow bg-info" style="max-width: 20rem; border-bottom-right-radius: 50%;">
-                    <audio controls autoplay loop="1" class="m-3 justify-content-center">
-                        <source src="mix/Deon Boakye - DAB ft. Medikal (1).mp3" type="audio/ogg" download>
-                        <source src="mix/Kuami-Eugene-Fire-Fire-(TrendyBeatz.com).mp3" type="audio/mpeg" download>
-                        Your browser does not support the audio element.
-                    </audio>
-                    <div class="card-text">
-                        <div class="card-title">
-                            <h2>Our Tunes</h2>
-                        </div>
-                        <div class="card-p">
-                            <p>Entertain Yourself while exploring<br> <b class="text-info">exploring our Site</b></p>
-                        </div>
-                    </div>
-                </div>    
-                <div class="copyright">
-                    
-                    <p class="text-white text-center">This page is copyright protected, by the <q>terms and conditions of the copyright Policy.</q> 
-                        <br> <b class="text-warning">Powered by: Perey Ku-Eru Wisdom 2022</b></p>
-                </div>            
-            </div>
-
-            
-        </div>
-    </div>
-    
-</footer>
-
-
-
-
-
-<script>
-    let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-</script>   
+    <script src="js/main.js"></script>
 </body>
 </html>
